@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    
+    
+ 
+}
+
+.container{
+    max-width: 142rem;
+    margin: auto;
+}
+
+.main-body{
+    background-image: linear-gradient(to right, #131111 0%, black 100%);
+    width: 90%;
+    max-width: 120rem;
+ 
+    margin: 3.95rem auto ;
+    border-radius: 3.4rem;
+    -webkit-border-radius: 3.4rem;
+    -moz-border-radius: 3.4rem;
+    -ms-border-radius: 3.4rem;
+    -o-border-radius: 3.4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-header{
+    width: 100%;
+    height: 10rem;
+  
+    display: flex;
+    padding: 0rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    
+}
+
+
+.card-header h2{
+    color:  white;
+    font-size: 3.5rem;
+    
+}
+.card-header ul{
+    display: flex;
+    width: 60rem;
+    justify-content: space-around;
+
+}
+
+.card-header ul li{
+    list-style: none;
+}
+
+.card-header ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    font-weight: 700;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: white;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+    
+}
+
+a:hover::before{
+    width: 100%;
+    
+}
+
+#content{
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 50rem;
+    justify-content: space-around;
+   
+   
+    
+}
+
+
+
+
+
+#image-section{
+    width: 40rem;
+    height: 40rem;
+}
+
+#image-section img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+#disc{
+ width: 60rem;
+ padding: 5rem 3rem;
+ border-radius: 1.5rem 0rem 1.5rem 0rem;
+ box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 0px 3px;
+ -webkit-border-radius: 1.5rem 0rem 1.5rem 0rem;
+ -moz-border-radius: 1.5rem 0rem 1.5rem 0rem;
+ -ms-border-radius: 1.5rem 0rem 1.5rem 0rem;
+ -o-border-radius: 1.5rem 0rem 1.5rem 0rem;
+
+}
+
+#disc #greed{
+    font-size: 3rem;
+    padding: 0.6rem 0rem;
+    font-weight: 600;
+}
+
+#disc #name{
+    font-size: 4rem;
+    padding: 0.7rem 0rem;
+    font-weight: 700;
+}
+
+#disc #first{
+    font-size: 2.5rem;
+    padding: 1.5rem 0rem;
+    font-weight: 600;
+}
+
+#disc #second{
+    font-size: 2.5rem;
+    padding: 0.3rem 0rem;
+    font-weight: 600;
+    color: aqua;
+    text-shadow: rgb(152, 247, 247) 1px 1px ;
+}
+
+#disc .about-me{
+    font-size: 1.8rem;
+    font-weight: 500;
+    word-spacing: 5px;
+    line-height: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.5rem 0rem;
+}
+
+.icon{
+    display: flex;
+    width: 50%;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.icon img{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.btn{
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(79, 160, 160);
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    border-radius:2rem;
+    -webkit-border-radius:2rem;
+    -moz-border-radius:2rem;
+    -ms-border-radius:2rem;
+    -o-border-radius:2rem;
+    padding: 0.5rem 1.4rem;
+    margin: 3rem auto;
+}
+
+.btn:hover{
+    background-color: rgb(141, 197, 197);
+}
+
+.head-about{
+
+    font-size: 3.4rem;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.head-about::before{
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 1.4px;
+    background-color:white;
+    z-index: 100;
+    
+}
+#About{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    padding: 1rem 8rem;
+    
+}
+#About .large{
+    color: white;
+    font-size: 2.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+#About .small{
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
+word-spacing: 0.5rem;
+
+}
+
+.text1,.text2{
+    padding: 4rem 3rem;
+   
+}
+
+
+.main-class{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 8rem;
+}
+
+.working,.edu{
+   padding:4rem 3rem ;
+}
+
+.work-intern,.edu-student{
+    margin: 7rem 0;
+}
+.work-intern .date,.edu-student .date{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 2.3rem 0;
+
+}
+
+.work-intern .cmp,.edu-student .college{
+   
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: black 2px 2px;
+    letter-spacing: 2.4px;
+
+}
+
+.work-intern .domain,.edu-student .std{
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+    letter-spacing: 1px;
+}
+
+.work-intern .full-disc,.edu-student .full-disc{
+    font-size: 2rem;
+    color: white;
+    margin: 2rem 0;
+    line-height: 3rem;
+}
+
+.line{
+    width: 100%;
+    height: 1px ;
+    background-color: white;
+}
+
+#project{
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    width: 100%;
+}
+
+.project-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4rem 1rem;
+    margin-bottom: 0;
+    min-height: 50rem;
+}
+
+.project{
+ width: 65rem;
+ height: 42rem;
+ border: 4px solid white;
+ background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0, 0.4); 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+.project img{
+    width:48rem;
+    height: 28rem;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.head-project{
+    font-size: 3.4rem;
+    color: black;
+    text-shadow: white 1px 1px;
+    position: relative;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.head-project::before{
+    content: "";
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    height: 1.4px;
+    z-index: 100;
+    background-color: black;
+}
+
+.project p{
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-shadow: black 1px 1px;
+    text-transform: capitalize;
+}
+
+.project img:hover{
+
+  width: 50rem;
+  height: 30rem;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  z-index: 1001;
+}
+
+
+.contact-me{
+    background-color: black;
+    color: white;
+}
+
+.head-Contact{
+    font-size: 3.4rem;
+    text-align: center;
+    padding: 3rem 0rem;
+    letter-spacing: 0.23rem;
+}
+
+.my-name{
+    font-size: 3.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(193, 185, 185);
+    padding: 4rem 0rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+.conn-para{
+    font-size: 3rem;
+    color: aqua;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    line-height: 4rem;
+    
+}
+
+.contact-me a{
+    
+    color: palegreen;
+    text-align: center;
+    
+}
+
+.contact-me button{
+    background: transparent;
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 4rem 0;
+    font-size: 3rem;
+
+}
+
+.contact-me #creator{
+    padding: 6rem 10rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+
+}
